@@ -1,0 +1,16 @@
+﻿.main-btn {
+    padding: 15px;
+    font: bold 12px/1 $primaryFonts;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: $secondColor;
+    border: 1px solid $secondColor;
+    background-color: transparent;
+
+    &:hover {
+        background-color: $secondColor;
+        color: $thirdColor;
+    }
+}
+
+
