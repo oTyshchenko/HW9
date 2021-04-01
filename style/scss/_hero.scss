@@ -2,7 +2,7 @@
     position: relative;
     z-index: -1;
     margin-top: -48px;
- 
+
 
     .carousel {
         .carousel-inner {
@@ -14,7 +14,8 @@
                 }
 
                 .carousel-caption {
-                    margin-bottom: 300px;
+                    top: 50%;
+                    transform: translateY(-35%);
 
                     h5 {
                         margin-bottom: 20px;

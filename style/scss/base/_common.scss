@@ -1,4 +1,12 @@
-﻿.main-btn {
+﻿.header-btn-style {
+    position: relative;
+    border: none;
+    font: 300 11px/1 $primaryFonts;
+    color: $fourthColor;
+    background: transparent;
+}
+
+.main-btn {
     padding: 15px 22px;
     font: bold 12px/1 $primaryFonts;
     letter-spacing: 0.9px;
@@ -14,10 +22,43 @@
     }
 }
 
-.headerbtn-style {
-    position: relative;
-    border: none;
-    font: 300 11px/1 $primaryFonts;
-    color: $fourthColor;
-    background: transparent;
+.section {
+    padding: 50px 0;
+}
+
+.section-title {
+    margin-bottom: 30px;
+    font: 300 36px/1 $primaryFonts;
+    text-align: center;
+    color: $firstColor;
+
+    &::after {
+        margin: 11px auto 0;
+        content: '';
+        display: block;
+        width: 50px;
+        height: 5px;
+        background: #eee;
+    }
+}
+
+.section-description {
+    margin-bottom: 20px;
+    font: 300 18px/1.67 $primaryFonts;
+    text-align: center;
+    color: $firstColor;
+}
+
+
+@media (min-width: $lg) {
+    .section {
+        padding: 100px 0;
+    }
+
+    .section-title {
+        margin-bottom: 51px; 
+    }
+    .section-description {
+        margin-bottom: 45px;
+    }
 }

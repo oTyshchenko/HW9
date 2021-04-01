@@ -61,6 +61,14 @@ a {
 /*fonts*/
 /*color*/
 /*breakpoints*/
+.header-btn-style {
+  position: relative;
+  border: none;
+  font: 300 11px/1 "Oxygen", sans-serif;
+  color: #85939f;
+  background: transparent;
+}
+
 .main-btn {
   padding: 15px 22px;
   font: bold 12px/1 "Oxygen", sans-serif;
@@ -76,14 +84,45 @@ a {
   color: #fff;
 }
 
-.headerbtn-style {
-  position: relative;
-  border: none;
-  font: 300 11px/1 "Oxygen", sans-serif;
-  color: #85939f;
-  background: transparent;
+.section {
+  padding: 50px 0;
 }
 
+.section-title {
+  margin-bottom: 30px;
+  font: 300 36px/1 "Oxygen", sans-serif;
+  text-align: center;
+  color: #3b4954;
+}
+.section-title::after {
+  margin: 11px auto 0;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 5px;
+  background: #eee;
+}
+
+.section-description {
+  margin-bottom: 20px;
+  font: 300 18px/1.67 "Oxygen", sans-serif;
+  text-align: center;
+  color: #3b4954;
+}
+
+@media (min-width: 992px) {
+  .section {
+    padding: 100px 0;
+  }
+
+  .section-title {
+    margin-bottom: 51px;
+  }
+
+  .section-description {
+    margin-bottom: 45px;
+  }
+}
 .welcome-section .main-header {
   position: relative;
   z-index: 1;
@@ -215,7 +254,8 @@ a {
   height: calc(100vh - 53px);
 }
 .hero-section .carousel .carousel-inner .carousel-item .carousel-caption {
-  margin-bottom: 300px;
+  top: 50%;
+  transform: translateY(-35%);
 }
 .hero-section .carousel .carousel-inner .carousel-item .carousel-caption h5 {
   margin-bottom: 20px;
@@ -238,6 +278,11 @@ a {
     height: calc(100vh - 53px);
   }
 }
+.month-section .container .month-section-btn {
+  display: block;
+  margin: 0 auto;
+}
+
 .main-footer {
   background: #19252E;
 }
