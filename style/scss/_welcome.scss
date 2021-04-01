@@ -1,65 +1,71 @@
 ﻿.welcome-section {
+
     .main-header {
-        padding-top: 10px;
-        background: $fifthColor;
+        position: relative;
+        z-index: 1;
 
-        .container {
+        .main-header-top-bg {
+            background: $fifthColor;
 
-            .header-top {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+            .container {
 
-                .search {
+                .header-top {
+                    padding: 10px 0;
                     display: flex;
                     justify-content: space-between;
-                    padding: 8px 11px;
-                    width: 210px;
-                    border: 1px solid $fourthColor;
+                    align-items: center;
 
-                    .search-field {
-                        padding: 0;
-                        border: none;
-                        font: 12px/1 $secondFonts;
-                        color: $fourthColor;
-                        background: transparent;
-                    }
+                    .search {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 8px 11px;
+                        width: 210px;
+                        border: 1px solid $fourthColor;
 
-                    .search-btn {
-                        padding: 0;
-                        width: 14px;
-                        height: 13px;
-                        border: none;
-                        background: url("../../img/search.png") no-repeat center/cover;
-                    }
-                }
+                        .search-field {
+                            padding: 0;
+                            border: none;
+                            font: 12px/1 $secondFonts;
+                            color: $fourthColor;
+                            background: transparent;
+                        }
 
-                .login-box {
-
-                    .login-btn {
-
-                        &::before {
-                            position: absolute;
-                            content: "";
-                            background: url("../../img/login.png") no-repeat center/cover;
-                            top: 0;
-                            left: -10px;
+                        .search-btn {
+                            padding: 0;
                             width: 14px;
                             height: 13px;
+                            border: none;
+                            background: url("../../img/search.png") no-repeat center/cover;
                         }
                     }
 
-                    .register-btn {
-                        margin-left: 10px;
+                    .login-box {
 
-                        &::before {
-                            position: absolute;
-                            content: "";
-                            background: url("../../img/login.png") no-repeat center/cover;
-                            top: 0;
-                            left: -10px;
-                            width: 14px;
-                            height: 13px;
+                        .login-btn {
+
+                            &::before {
+                                position: absolute;
+                                content: "";
+                                background: url("../../img/login.png") no-repeat center/cover;
+                                top: 0;
+                                left: -10px;
+                                width: 14px;
+                                height: 13px;
+                            }
+                        }
+
+                        .register-btn {
+                            margin-left: 10px;
+
+                            &::before {
+                                position: absolute;
+                                content: "";
+                                background: url("../../img/login.png") no-repeat center/cover;
+                                top: 0;
+                                left: -10px;
+                                width: 14px;
+                                height: 13px;
+                            }
                         }
                     }
                 }
@@ -67,8 +73,16 @@
         }
 
         .header-bottom {
+            background: rgba(0, 0, 0, 0.5);
+
             .navbar {
+                position: relative;
+                padding-top: 0;
+                padding-block: 0;
+
                 .navbar-brand {
+                    padding: 0;
+
                     .logo-name {
                         font-size: 0px;
                     }
@@ -85,9 +99,11 @@
 
                 .navbar-toggler {
                     background: $thirdColor;
+                    
                 }
 
                 .navbar-collapse {
+                    
                     .navbar-nav {
                         .nav-item {
 

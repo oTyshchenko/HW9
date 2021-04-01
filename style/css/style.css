@@ -62,10 +62,11 @@ a {
 /*color*/
 /*breakpoints*/
 .main-btn {
-  padding: 15px;
+  padding: 15px 22px;
   font: bold 12px/1 "Oxygen", sans-serif;
   letter-spacing: 0.9px;
   text-align: center;
+  text-transform: uppercase;
   color: #02baab;
   border: 1px solid #02baab;
   background-color: transparent;
@@ -84,36 +85,40 @@ a {
 }
 
 .welcome-section .main-header {
-  padding-top: 10px;
+  position: relative;
+  z-index: 1;
+}
+.welcome-section .main-header .main-header-top-bg {
   background: #000;
 }
-.welcome-section .main-header .container .header-top {
+.welcome-section .main-header .main-header-top-bg .container .header-top {
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.welcome-section .main-header .container .header-top .search {
+.welcome-section .main-header .main-header-top-bg .container .header-top .search {
   display: flex;
   justify-content: space-between;
   padding: 8px 11px;
   width: 210px;
   border: 1px solid #85939f;
 }
-.welcome-section .main-header .container .header-top .search .search-field {
+.welcome-section .main-header .main-header-top-bg .container .header-top .search .search-field {
   padding: 0;
   border: none;
   font: 12px/1 "Lato", sans-serif;
   color: #85939f;
   background: transparent;
 }
-.welcome-section .main-header .container .header-top .search .search-btn {
+.welcome-section .main-header .main-header-top-bg .container .header-top .search .search-btn {
   padding: 0;
   width: 14px;
   height: 13px;
   border: none;
   background: url("../../img/search.png") no-repeat center/cover;
 }
-.welcome-section .main-header .container .header-top .login-box .login-btn::before {
+.welcome-section .main-header .main-header-top-bg .container .header-top .login-box .login-btn::before {
   position: absolute;
   content: "";
   background: url("../../img/login.png") no-repeat center/cover;
@@ -122,10 +127,10 @@ a {
   width: 14px;
   height: 13px;
 }
-.welcome-section .main-header .container .header-top .login-box .register-btn {
+.welcome-section .main-header .main-header-top-bg .container .header-top .login-box .register-btn {
   margin-left: 10px;
 }
-.welcome-section .main-header .container .header-top .login-box .register-btn::before {
+.welcome-section .main-header .main-header-top-bg .container .header-top .login-box .register-btn::before {
   position: absolute;
   content: "";
   background: url("../../img/login.png") no-repeat center/cover;
@@ -133,6 +138,17 @@ a {
   left: -10px;
   width: 14px;
   height: 13px;
+}
+.welcome-section .main-header .header-bottom {
+  background: rgba(0, 0, 0, 0.5);
+}
+.welcome-section .main-header .header-bottom .navbar {
+  position: relative;
+  padding-top: 0;
+  padding-block: 0;
+}
+.welcome-section .main-header .header-bottom .navbar .navbar-brand {
+  padding: 0;
 }
 .welcome-section .main-header .header-bottom .navbar .navbar-brand .logo-name {
   font-size: 0px;
@@ -188,6 +204,38 @@ a {
   }
   .welcome-section .header-bottom .navbar .navbar-collapse li + li + li + li + li + li + li {
     border-top: 10px solid #0c8fcc;
+  }
+}
+.hero-section {
+  position: relative;
+  z-index: -1;
+  margin-top: -48px;
+}
+.hero-section .carousel .carousel-inner .carousel-item img {
+  height: calc(100vh - 53px);
+}
+.hero-section .carousel .carousel-inner .carousel-item .carousel-caption {
+  margin-bottom: 300px;
+}
+.hero-section .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+  margin-bottom: 20px;
+  font: 300 60px/1 "Oxygen", sans-serif;
+  text-align: center;
+  color: #02baab;
+}
+.hero-section .carousel .carousel-inner .carousel-item .carousel-caption p {
+  margin-bottom: 100px;
+  font: 300 60px/1 "Oxygen", sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .hero-section {
+    margin-top: -76px;
+  }
+  .hero-section .carousel .carousel-inner .carousel-item img {
+    height: calc(100vh - 53px);
   }
 }
 .main-footer {

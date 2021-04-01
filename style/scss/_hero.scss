@@ -1,0 +1,55 @@
+.hero-section {
+    position: relative;
+    z-index: -1;
+    margin-top: -48px;
+ 
+
+    .carousel {
+        .carousel-inner {
+
+            .carousel-item {
+
+                img {
+                    height: calc(100vh - 53px);
+                }
+
+                .carousel-caption {
+                    margin-bottom: 300px;
+
+                    h5 {
+                        margin-bottom: 20px;
+                        font: 300 60px/1 $primaryFonts;
+                        text-align: center;
+                        color: $secondColor;
+                    }
+
+                    p {
+                        margin-bottom: 100px;
+                        font: 300 60px/1 $primaryFonts;
+                        text-align: center;
+                        color: $thirdColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $lg) {
+    .hero-section {
+        margin-top: -76px;
+
+        .carousel {
+
+            .carousel-inner {
+
+                .carousel-item {
+
+                    img {
+                        height: calc(100vh - 53px);
+                    }
+                }
+            }
+        }
+    }
+}
