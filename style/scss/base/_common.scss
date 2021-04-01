@@ -13,4 +13,10 @@
     }
 }
 
-
+.headerbtn-style {
+    position: relative;
+    border: none;
+    font: 300 11px/1 $primaryFonts;
+    color: $fourthColor;
+    background: transparent;
+}

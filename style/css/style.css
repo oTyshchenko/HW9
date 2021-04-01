@@ -60,6 +60,7 @@ a {
 
 /*fonts*/
 /*color*/
+/*breakpoints*/
 .main-btn {
   padding: 15px;
   font: bold 12px/1 "Oxygen", sans-serif;
@@ -74,6 +75,121 @@ a {
   color: #fff;
 }
 
+.headerbtn-style {
+  position: relative;
+  border: none;
+  font: 300 11px/1 "Oxygen", sans-serif;
+  color: #85939f;
+  background: transparent;
+}
+
+.welcome-section .main-header {
+  padding-top: 10px;
+  background: #000;
+}
+.welcome-section .main-header .container .header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.welcome-section .main-header .container .header-top .search {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 11px;
+  width: 210px;
+  border: 1px solid #85939f;
+}
+.welcome-section .main-header .container .header-top .search .search-field {
+  padding: 0;
+  border: none;
+  font: 12px/1 "Lato", sans-serif;
+  color: #85939f;
+  background: transparent;
+}
+.welcome-section .main-header .container .header-top .search .search-btn {
+  padding: 0;
+  width: 14px;
+  height: 13px;
+  border: none;
+  background: url("../../img/search.png") no-repeat center/cover;
+}
+.welcome-section .main-header .container .header-top .login-box .login-btn::before {
+  position: absolute;
+  content: "";
+  background: url("../../img/login.png") no-repeat center/cover;
+  top: 0;
+  left: -10px;
+  width: 14px;
+  height: 13px;
+}
+.welcome-section .main-header .container .header-top .login-box .register-btn {
+  margin-left: 10px;
+}
+.welcome-section .main-header .container .header-top .login-box .register-btn::before {
+  position: absolute;
+  content: "";
+  background: url("../../img/login.png") no-repeat center/cover;
+  top: 0;
+  left: -10px;
+  width: 14px;
+  height: 13px;
+}
+.welcome-section .main-header .header-bottom .navbar .navbar-brand .logo-name {
+  font-size: 0px;
+}
+.welcome-section .main-header .header-bottom .navbar .navbar-brand .main-logo {
+  width: 130px;
+  height: 48px;
+}
+.welcome-section .main-header .header-bottom .navbar .navbar-brand .main-logo .main-logo-img {
+  width: 100%;
+}
+.welcome-section .main-header .header-bottom .navbar .navbar-toggler {
+  background: #fff;
+}
+.welcome-section .main-header .header-bottom .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font: 300 12px/1 "Oxygen", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+.welcome-section .main-header .header-bottom .navbar .navbar-collapse .navbar-nav .nav-item:hover {
+  background: gray;
+}
+
+@media (min-width: 992px) {
+  .welcome-section .header-bottom .navbar .navbar-collapse {
+    flex-grow: 0;
+  }
+  .welcome-section .header-bottom .navbar .navbar-collapse .navbar-nav .nav-item {
+    padding: 27px 0;
+    width: 99px;
+  }
+  .welcome-section .header-bottom .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    padding: 0;
+  }
+  .welcome-section .header-bottom .navbar .navbar-collapse li {
+    border-top: 10px solid #ffae00;
+  }
+  .welcome-section .header-bottom .navbar .navbar-collapse li + li {
+    border-top: 10px solid #fc7100;
+  }
+  .welcome-section .header-bottom .navbar .navbar-collapse li + li + li {
+    border-top: 10px solid #e51c5e;
+  }
+  .welcome-section .header-bottom .navbar .navbar-collapse li + li + li + li {
+    border-top: 10px solid #ae0f8d;
+  }
+  .welcome-section .header-bottom .navbar .navbar-collapse li + li + li + li + li {
+    border-top: 10px solid #6d0fae;
+  }
+  .welcome-section .header-bottom .navbar .navbar-collapse li + li + li + li + li + li {
+    border-top: 10px solid #33227a;
+  }
+  .welcome-section .header-bottom .navbar .navbar-collapse li + li + li + li + li + li + li {
+    border-top: 10px solid #0c8fcc;
+  }
+}
 .main-footer {
   background: #19252E;
 }

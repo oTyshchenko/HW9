@@ -1,0 +1,163 @@
+﻿.welcome-section {
+    .main-header {
+        padding-top: 10px;
+        background: $fifthColor;
+
+        .container {
+
+            .header-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .search {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 8px 11px;
+                    width: 210px;
+                    border: 1px solid $fourthColor;
+
+                    .search-field {
+                        padding: 0;
+                        border: none;
+                        font: 12px/1 $secondFonts;
+                        color: $fourthColor;
+                        background: transparent;
+                    }
+
+                    .search-btn {
+                        padding: 0;
+                        width: 14px;
+                        height: 13px;
+                        border: none;
+                        background: url("../../img/search.png") no-repeat center/cover;
+                    }
+                }
+
+                .login-box {
+
+                    .login-btn {
+
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            background: url("../../img/login.png") no-repeat center/cover;
+                            top: 0;
+                            left: -10px;
+                            width: 14px;
+                            height: 13px;
+                        }
+                    }
+
+                    .register-btn {
+                        margin-left: 10px;
+
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            background: url("../../img/login.png") no-repeat center/cover;
+                            top: 0;
+                            left: -10px;
+                            width: 14px;
+                            height: 13px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .header-bottom {
+            .navbar {
+                .navbar-brand {
+                    .logo-name {
+                        font-size: 0px;
+                    }
+
+                    .main-logo {
+                        width: 130px;
+                        height: 48px;
+
+                        .main-logo-img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .navbar-toggler {
+                    background: $thirdColor;
+                }
+
+                .navbar-collapse {
+                    .navbar-nav {
+                        .nav-item {
+
+
+                            .nav-link {
+                                font: 300 12px/1 $primaryFonts;
+                                text-transform: uppercase;
+                                text-align: center;
+                                color: $thirdColor;
+                            }
+
+                            &:hover {
+                                background: gray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $lg) {
+    .welcome-section {
+        .header-bottom {
+            .navbar {
+
+                .navbar-collapse {
+                    flex-grow: 0;
+
+                    .navbar-nav {
+                        .nav-item {
+                            padding: 27px 0;
+                            width: 99px;
+
+                            .nav-link {
+                                padding: 0;
+                            }
+                        }
+                    }
+
+                    li {
+                        border-top: 10px solid #ffae00;
+
+                        & + li {
+                            border-top: 10px solid #fc7100;
+
+                            & + li {
+                                border-top: 10px solid #e51c5e;
+
+                                & + li {
+                                    border-top: 10px solid #ae0f8d;
+
+                                    & + li {
+                                        border-top: 10px solid #6d0fae;
+
+                                        & + li {
+                                            border-top: 10px solid #33227a;
+
+                                            & + li {
+                                                border-top: 10px solid #0c8fcc;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
