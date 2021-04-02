@@ -123,6 +123,10 @@ a {
   font: 300 14px/1.71 "Oxygen", sans-serif;
   color: #3b4954;
 }
+.second-section-description-blue {
+  line-height: 1;
+  color: #02baab;
+}
 
 @media (min-width: 992px) {
   .section {
@@ -651,6 +655,104 @@ a {
   width: 19px;
   height: 14px;
   background: url("../../img/coment.png") center/cover;
+}
+
+.teamCard {
+  margin-bottom: 30px;
+  position: relative;
+  border: 2px solid #eee;
+  z-index: 1;
+}
+.teamCard .teamCard-img-box {
+  position: relative;
+}
+.teamCard .teamCard-img-box .blogCard-img {
+  width: 100%;
+}
+.teamCard .teamCard-img-box .teamCard-body {
+  position: absolute;
+  bottom: 0;
+  height: calc(100% - 45%);
+  width: 100%;
+  background: #fff;
+  z-index: 2;
+}
+.teamCard .teamCard-img-box .teamCard-body .teamCard-body-description {
+  margin: 80px auto;
+  width: 155px;
+  font: 12px/2 "Oxygen", sans-serif;
+  text-align: center;
+  color: #3b4954;
+}
+.teamCard .teamCard-img-box .teamCard-person {
+  position: absolute;
+  top: 40%;
+  transform: translateX(-50%);
+  left: 50%;
+  padding: 14px;
+  border: 1px solid #eee;
+  background: #fff;
+  z-index: 4;
+}
+.teamCard .teamCard-img-box .teamCard-person .teamCard-person-title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.teamCard .teamCard-img-box .teamCard-person .teamCard-person-description {
+  font: 12px/1 "Oxygen", sans-serif;
+  text-align: center;
+  color: #c4c4c4;
+}
+.teamCard .teamCard-btn {
+  width: 100%;
+  padding: 30px 0;
+  background: #fff;
+  border: none;
+  z-index: 3;
+}
+.teamCard .teamCard-btn .team-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 14px 42px;
+}
+
+.teamCard-img-box:hover .blogCard-img {
+  width: 100%;
+}
+.teamCard-img-box:hover .teamCard-body {
+  position: absolute;
+  bottom: 0;
+  height: calc(100% - 45%);
+  width: 100%;
+  background: transparent;
+  z-index: 0;
+}
+.teamCard-img-box:hover .teamCard-body .teamCard-body-description {
+  margin: 80px auto;
+  width: 155px;
+  font: 0px/2 "Oxygen", sans-serif;
+  text-align: center;
+  color: #3b4954;
+}
+.teamCard-img-box:hover .teamCard-person {
+  position: absolute;
+  top: 40%;
+  transform: translateX(-50%);
+  left: 50%;
+  padding: 14px;
+  border: none;
+  background: transparent;
+  z-index: 0;
+}
+.teamCard-img-box:hover .teamCard-person .teamCard-person-title {
+  font: 0px/1 "Oxygen", sans-serif;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.teamCard-img-box:hover .teamCard-person .teamCard-person-description {
+  font: 0px/1 "Oxygen", sans-serif;
+  text-align: center;
+  color: #c4c4c4;
 }
 
 .main-footer {
