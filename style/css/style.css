@@ -100,6 +100,9 @@ a {
 .second-section-title-white {
   color: #fff;
 }
+.second-section-title-black {
+  color: #000;
+}
 
 .section-description {
   position: relative;
@@ -111,6 +114,11 @@ a {
 }
 .section-description-white {
   color: #fff;
+}
+
+.second-section-description {
+  font: 300 14px/1.71 "Oxygen", sans-serif;
+  color: #3b4954;
 }
 
 @media (min-width: 992px) {
@@ -346,6 +354,61 @@ a {
   }
   .wordpress-section .container .wordpress-section-body .wordpress-section-btn {
     display: block;
+    margin: 0 auto;
+  }
+}
+.superb-section .container .superb-section-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.superb-section .container .superb-section-list .superb-section-item {
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: center;
+}
+.superb-section .container .superb-section-list .superb-section-item .superb-section-img-box {
+  margin-right: 20px;
+  width: 40px;
+}
+.superb-section .container .superb-section-list .superb-section-item .superb-section-img-box .superb-section-img {
+  width: 100%;
+}
+.superb-section .container .superb-section-list .superb-section-item .superb-section-description {
+  width: 290px;
+}
+.superb-section .container .superb-section-list .superb-section-item .superb-section-description .superb-section-second-title {
+  padding: 0 0 13px;
+}
+.superb-section .container .superb-section-list .superb-section-item:last-child {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .superb-section .container .superb-section-list .superb-section-item {
+    width: 340px;
+  }
+  .superb-section .container .superb-section-list .superb-section-item .superb-section-description {
+    width: 260px;
+  }
+  .superb-section .container .superb-section-list .superb-section-item:nth-last-child(2) {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) {
+  .superb-section .container .superb-section-list .superb-section-item {
+    margin: 0 auto 59px;
+  }
+  .superb-section .container .superb-section-list .superb-section-item .superb-section-description {
+    width: 355px;
+  }
+  .superb-section .container .superb-section-list .superb-section-item:last-child {
+    margin: 0 auto;
+  }
+  .superb-section .container .superb-section-list .superb-section-item:nth-last-child(2) {
+    margin: 0 auto;
+  }
+  .superb-section .container .superb-section-list .superb-section-item:nth-last-child(3) {
     margin: 0 auto;
   }
 }
