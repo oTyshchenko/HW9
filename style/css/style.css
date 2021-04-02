@@ -103,6 +103,9 @@ a {
 .second-section-title-black {
   color: #000;
 }
+.second-section-title-blue {
+  color: #02baab;
+}
 
 .section-description {
   position: relative;
@@ -455,6 +458,15 @@ a {
   z-index: 3;
 }
 
+.blog-section {
+  padding-bottom: 0px;
+}
+
+@media (min-width: 992px) {
+  .blog-section {
+    padding-bottom: 50px;
+  }
+}
 .main-btn {
   padding: 15px 22px;
   font: bold 12px/1 "Oxygen", sans-serif;
@@ -600,6 +612,45 @@ a {
 }
 .productCard-box .productCard:hover .productCard-box-hover {
   z-index: 4;
+}
+
+.blogCard {
+  margin-bottom: 50px;
+  padding: 0 0 30px;
+  border-bottom: 1px solid #3b4954;
+}
+.blogCard .blogCard-img-box {
+  margin-bottom: 30px;
+}
+.blogCard .blogCard-img-box .blogCard-img {
+  width: 100%;
+}
+.blogCard .blogCard-title {
+  margin-bottom: 30px;
+}
+.blogCard .blogCard-description {
+  margin-bottom: 20px;
+}
+.blogCard .blogCard-coment-box {
+  display: flex;
+  justify-content: space-between;
+}
+.blogCard .blogCard-coment-box .blogCard-coment-box-link {
+  font: 300 14px/1 "Oxygen", sans-serif;
+  color: #02baab;
+}
+.blogCard .blogCard-coment-box .blogCard-coment-box-coment-counter {
+  display: flex;
+  font: 300 14px/1 "Oxygen", sans-serif;
+  color: #3b4954;
+}
+.blogCard .blogCard-coment-box .blogCard-coment-box-coment-counter::before {
+  content: "";
+  display: flex;
+  margin-right: 10px;
+  width: 19px;
+  height: 14px;
+  background: url("../../img/coment.png") center/cover;
 }
 
 .main-footer {

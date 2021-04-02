@@ -1,0 +1,9 @@
+.blog-section {
+	padding-bottom: 0px;
+}
+
+@media (min-width: $lg) {
+	.blog-section {
+		padding-bottom: 50px;
+	}
+}

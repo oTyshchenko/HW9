@@ -181,3 +181,50 @@
         }
     }
 }
+
+.blogCard {
+    margin-bottom: 50px;
+    padding: 0 0 30px;
+    border-bottom: 1px solid $firstColor;
+
+    .blogCard-img-box {
+        margin-bottom: 30px;
+
+        .blogCard-img {
+            width: 100%
+        }
+    }
+
+    .blogCard-title {
+        margin-bottom: 30px;
+    }
+
+    .blogCard-description {
+        margin-bottom: 20px;
+    }
+
+    .blogCard-coment-box {
+        display: flex;
+        justify-content: space-between;
+
+        .blogCard-coment-box-link {
+            font: 300 14px/1 $primaryFonts;
+            color: $secondColor;
+        }
+
+        .blogCard-coment-box-coment-counter {
+            display: flex;
+            font: 300 14px/1 $primaryFonts;
+            color: $firstColor;
+
+            &::before {
+                content: "";
+                display: flex;
+                margin-right: 10px;
+                width: 19px;
+                height: 14px;
+                background: url("../../img/coment.png") center/cover;
+            }
+        }
+    }
+}

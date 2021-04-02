@@ -43,6 +43,10 @@
     &-black {
         color: $fifthColor;
     }
+
+    &-blue {
+        color: $secondColor;
+    }
 }
 
 .section-description {
@@ -61,6 +65,7 @@
 .second-section-description {
     font: 300 14px/1.71 $primaryFonts;
     color: $firstColor;
+
 }
 
 
