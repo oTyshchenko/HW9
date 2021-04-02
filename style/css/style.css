@@ -412,6 +412,49 @@ a {
     margin: 0 auto;
   }
 }
+.quotes-section {
+  position: relative;
+  background: url("../../img/quote-bg.png") no-repeat center;
+  z-index: 2;
+}
+.quotes-section:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.quotes-section .container .quotes-section-img-box {
+  position: relative;
+  z-index: 3;
+  margin: 0 auto 50px;
+  width: 44px;
+  height: 36px;
+}
+.quotes-section .container .quotes-section-img-box .quotes-section-img {
+  width: 100%;
+}
+.quotes-section .container .quotes-section-title {
+  margin: 0 auto 20px;
+  max-width: 615px;
+  position: relative;
+  text-align: center;
+  z-index: 3;
+}
+.quotes-section .container .quotes-section-description {
+  margin: 0 auto;
+  max-width: 614px;
+  position: relative;
+  text-align: center;
+  font: bold 14px/1 "Lato", sans-serif;
+  text-transform: uppercase;
+  color: #02baab;
+  z-index: 3;
+}
+
 .main-btn {
   padding: 15px 22px;
   font: bold 12px/1 "Oxygen", sans-serif;
