@@ -1,0 +1,149 @@
+.productCard-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .productCard {
+        position: relative;
+        margin: 0 auto 30px;
+        width: 290px;
+        height: 290px;
+        z-index: 5;
+
+        .productCard-box-img {
+            position: relative;
+            width: 290px;
+            height: 290px;
+            margin-bottom: -70px;
+            z-index: 1;
+
+            .productCard-img {
+                width: 100%;
+            }
+        }
+
+        .productCard-box-inf {
+            position: relative;
+            z-index: 3;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #3A3A3A;
+
+            .productCard-box-inf-description {
+
+                .productCard-box-inf-description__name {
+                    margin-bottom: 5px;
+                    font: 300 14px/1 $primaryFonts;
+                    color: $thirdColor;
+                }
+
+                .productCard-box-inf-description__position {
+                    font: 300 11px/1 $primaryFonts;
+                    color: $secondColor;
+                }
+            }
+
+            .productCard-box-inf-likes {
+                .productCard-box-inf-likes__img {
+                    margin: 0 auto 5px;
+                    display: block;
+                    width: 13px;
+                    height: 11px;
+                    border: none;
+                    background: url("../../img/like-logo.png") center/cover;
+                }
+
+                .productCard-box-inf-likes__counter {
+                    font: 300 11px/1 $primaryFonts;
+                    color: $secondColor;
+                }
+            }
+        }
+
+        .productCard-box-hover {
+            position: relative;
+            margin-top: -290px;
+            padding: 75px 0;
+            height: 290px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            z-index: -1;
+
+            .productCard-box-hover-link {
+                width: 40px;
+                height: 40px;
+
+                .productCard-box-hover-img {
+                    width: 100%;
+                }
+            }
+        }
+
+        &:hover {
+            position: relative;
+
+            &:after {
+                transition: 2s;
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.7);
+                z-index: 2;
+            }
+
+            .productCard-box-img {
+                width: 290px;
+                height: 290px;
+
+
+                .productCard-img {
+                    width: 100%;
+                }
+            }
+
+            .productCard-box-inf {
+                transition: 2s;
+                height: 70px;
+                margin-top: -70px;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                background-color: transparent;
+
+                .productCard-box-inf-description {
+
+                    .productCard-box-inf-description__name {
+                        margin-bottom: 5px;
+                        font: 300 0px/1 $primaryFonts;
+                    }
+
+                    .productCard-box-inf-description__position {
+                        font: 300 0px/1 $primaryFonts;
+                    }
+                }
+
+                .productCard-box-inf-likes {
+                    .productCard-box-inf-likes__img {
+                        border: none;
+                        background: none;
+                    }
+
+                    .productCard-box-inf-likes__counter {
+                        font: 300 0px/1 $primaryFonts;
+                        color: transparent;
+                    }
+                }
+            }
+
+            .productCard-box-hover {
+                z-index: 4;
+            }
+        }
+    }
+}

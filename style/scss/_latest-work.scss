@@ -1,0 +1,39 @@
+.work-section {
+    position: relative;
+    background: url("../../img/work.png") no-repeat center;
+    z-index: 2;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    .work-section-navigation {
+        margin: 0 auto;
+        position: relative;
+        width: 50px;
+        height: 15px;
+        display: flex;
+        justify-content: space-between;
+        z-index: 3;
+
+        .work-section-navigation-btn {
+            display: block;
+            padding: 0;
+            width: 7px;
+            height: 15px;
+            border: none;
+            background: url("../../img/arrow.png") center/cover;
+        }
+
+        .work-section-navigation-btn-r {
+            transform: scale(-1, 1);
+        }
+    }
+}
