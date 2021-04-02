@@ -1,3 +1,37 @@
+.main-btn {
+    padding: 15px 22px;
+    font: bold 12px/1 $primaryFonts;
+    letter-spacing: 0.9px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $secondColor;
+    border: 1px solid $secondColor;
+    background-color: transparent;
+
+    &:hover {
+        background-color: $secondColor;
+        color: $thirdColor;
+    }
+
+    &-white {
+        color: $thirdColor;
+        border: 1px solid $thirdColor;
+    }
+
+    &-arrow {
+        &::after {
+            content: "";
+            margin: 0 0 0 20px;
+            padding: 0;
+            display: inline-block;
+            width: 4px;
+            height: 10px;
+            background: url("../../img/arrow.png") center/cover;
+            transform: scale(-1, 1);
+        }
+    }
+}
+
 .productCard-box {
     display: flex;
     justify-content: space-between;

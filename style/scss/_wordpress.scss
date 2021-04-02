@@ -1,0 +1,42 @@
+.wordpress-section {
+    padding: 50px 0;
+    background: $secondColor;
+
+    .container {
+
+        .wordpress-section-body {
+
+            .wordpress-section-title {
+            margin: 0 0 20px;
+            text-align: center;
+            }
+
+            .wordpress-section-btn {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (min-width: $lg) {
+    .wordpress-section {
+
+        .container {
+
+            .wordpress-section-body {
+                display: flex;
+                justify-content: space-between;
+                .wordpress-section-title {
+                    margin: 0;
+                    text-align: left;
+                }
+
+                .wordpress-section-btn {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

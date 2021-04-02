@@ -6,21 +6,7 @@
     background: transparent;
 }
 
-.main-btn {
-    padding: 15px 22px;
-    font: bold 12px/1 $primaryFonts;
-    letter-spacing: 0.9px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $secondColor;
-    border: 1px solid $secondColor;
-    background-color: transparent;
 
-    &:hover {
-        background-color: $secondColor;
-        color: $thirdColor;
-    }
-}
 
 .section {
     padding: 50px 0;
@@ -42,6 +28,15 @@
         height: 5px;
         background: #eee;
     }
+
+    &-white {
+        color: $thirdColor;
+    }
+}
+
+.second-section-title {
+    font: 300 24px/1.25 $primaryFonts;
+    color: $firstColor;
 
     &-white {
         color: $thirdColor;

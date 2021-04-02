@@ -69,21 +69,6 @@ a {
   background: transparent;
 }
 
-.main-btn {
-  padding: 15px 22px;
-  font: bold 12px/1 "Oxygen", sans-serif;
-  letter-spacing: 0.9px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #02baab;
-  border: 1px solid #02baab;
-  background-color: transparent;
-}
-.main-btn:hover {
-  background-color: #02baab;
-  color: #fff;
-}
-
 .section {
   padding: 50px 0;
 }
@@ -105,6 +90,14 @@ a {
   background: #eee;
 }
 .section-title-white {
+  color: #fff;
+}
+
+.second-section-title {
+  font: 300 24px/1.25 "Oxygen", sans-serif;
+  color: #3b4954;
+}
+.second-section-title-white {
   color: #fff;
 }
 
@@ -326,6 +319,62 @@ a {
   background: url("../../img/arrow.png") center/cover;
 }
 .work-section .work-section-navigation .work-section-navigation-btn-r {
+  transform: scale(-1, 1);
+}
+
+.wordpress-section {
+  padding: 50px 0;
+  background: #02baab;
+}
+.wordpress-section .container .wordpress-section-body .wordpress-section-title {
+  margin: 0 0 20px;
+  text-align: center;
+}
+.wordpress-section .container .wordpress-section-body .wordpress-section-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .wordpress-section .container .wordpress-section-body {
+    display: flex;
+    justify-content: space-between;
+  }
+  .wordpress-section .container .wordpress-section-body .wordpress-section-title {
+    margin: 0;
+    text-align: left;
+  }
+  .wordpress-section .container .wordpress-section-body .wordpress-section-btn {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.main-btn {
+  padding: 15px 22px;
+  font: bold 12px/1 "Oxygen", sans-serif;
+  letter-spacing: 0.9px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #02baab;
+  border: 1px solid #02baab;
+  background-color: transparent;
+}
+.main-btn:hover {
+  background-color: #02baab;
+  color: #fff;
+}
+.main-btn-white {
+  color: #fff;
+  border: 1px solid #fff;
+}
+.main-btn-arrow::after {
+  content: "";
+  margin: 0 0 0 20px;
+  padding: 0;
+  display: inline-block;
+  width: 4px;
+  height: 10px;
+  background: url("../../img/arrow.png") center/cover;
   transform: scale(-1, 1);
 }
 
