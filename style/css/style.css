@@ -69,6 +69,92 @@ a {
   background: transparent;
 }
 
+.page-header {
+  position: relative;
+  z-index: -1;
+  margin-top: -48px;
+  padding: 215px 0 50px;
+  background: url("../../img/page-header.png") center/cover;
+}
+.page-header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.page-header .page-title {
+  position: relative;
+  z-index: 3;
+  margin: 0 auto 20px;
+  font: 300 36px/1 "Oxygen", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+.page-header .blog-page-header-bottom {
+  position: relative;
+  z-index: 3;
+  display: block;
+}
+.page-header .blog-page-header-bottom .page-data {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+.page-header .blog-page-header-bottom .page-data .page-data-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  margin-left: 10px;
+  font: 12px/1 "Oxygen", sans-serif;
+  color: #85939f;
+}
+.page-header .blog-page-header-bottom .page-data .page-data-item::before {
+  display: inline-block;
+  margin-right: 3px;
+  content: "";
+  background: url("../../img/login.png") no-repeat center/cover;
+  width: 14px;
+  height: 13px;
+}
+.page-header .blog-page-header-bottom .page-nav {
+  display: flex;
+  justify-content: center;
+}
+.page-header .blog-page-header-bottom .page-nav .page-nav-item {
+  margin-right: 5px;
+  font: 12px/1 "Oxygen", sans-serif;
+  color: #85939f;
+}
+.page-header .blog-page-header-bottom .page-nav .page-nav-item::after {
+  display: inline-block;
+  margin-left: 5px;
+  content: "/";
+}
+.page-header .blog-page-header-bottom .page-nav .page-nav-item:nth-last-child(1)::after {
+  content: none;
+}
+
+@media (min-width: 992px) {
+  .page-header {
+    margin-top: -76px;
+  }
+  .page-header .page-title {
+    text-align: left;
+  }
+  .page-header .blog-page-header-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  .page-header .blog-page-header-bottom .page-data {
+    margin: 0;
+    display: flex;
+  }
+}
 .section {
   padding: 50px 0;
 }
@@ -876,6 +962,13 @@ a {
   color: #c4c4c4;
 }
 
+.blog-navigation .blog-navigation-list {
+  display: flex;
+  justify-content: center;
+}
+.blog-navigation .blog-navigation-list .blog-navigation-item {
+  margin-left: 10px;
+}
 .main-footer {
   background: #19252E;
 }

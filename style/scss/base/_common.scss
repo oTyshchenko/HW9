@@ -6,9 +6,116 @@
     background: transparent;
 }
 
+.page-header {
+    position: relative;
+    z-index: -1;
+    margin-top: -48px;
+    padding: 215px 0 50px;
+    background: url("../../img/page-header.png") center/cover;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    .page-title {
+        position: relative;
+        z-index: 3;
+        margin: 0 auto 20px;
+        font: 300 36px/1 $primaryFonts;
+        color: $thirdColor;
+        text-align: center;
+    }
+
+    .blog-page-header-bottom {
+ 
+        position: relative;
+        z-index: 3;
+        display: block;
+
+
+        .page-data {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+
+            .page-data-item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: start;
+                margin-left: 10px;
+                font: 12px/1 $primaryFonts;
+                color: $fourthColor;
+
+                &::before {
+                    display: inline-block;
+                    margin-right: 3px;
+                    content: "";
+                    background: url("../../img/login.png") no-repeat center/cover;
+                    width: 14px;
+                    height: 13px;
+                }
+            }
+        }
+
+        .page-nav {
+            display: flex;
+            justify-content: center;
+
+            .page-nav-item {
+                margin-right: 5px;
+                font: 12px/1 $primaryFonts;
+                color: $fourthColor;
+
+                &::after {
+                    display: inline-block;
+                    margin-left: 5px;
+                    content: "/";
+                }
+
+                &:nth-last-child(1) {
+                    &::after {
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $lg) {
+    .page-header {
+        margin-top: -76px;
+
+        .page-title {
+            text-align: left;
+        }
+
+        .blog-page-header-bottom {
+            display: flex;
+            justify-content: space-between;
+
+            .page-data {
+                margin: 0;
+                display: flex;
+            }
+        }
+    }
+
+}
+
 .section {
     padding: 50px 0;
 }
+
+
 
 .section-title {
     position: relative;
