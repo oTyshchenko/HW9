@@ -1,0 +1,18 @@
+.portfilio-page-btn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 0;
+    border: none;
+    font: 12px/1 $primaryFonts;
+    color: $secondColor;
+    background: none;
+
+    &::after {
+        display:block;
+        margin: 7px auto 0;
+        content: "";
+        background: url("../../img/arrow-portfolio-btn.png") no-repeat center/cover;
+        width: 11px;
+        height: 6px;
+    }
+}
