@@ -1,0 +1,184 @@
+.experience-section {
+    background: $secondColor;
+
+    .container {
+        .row {
+            .experience-section-item {
+                margin-bottom: 40px;
+
+                .canvas {
+                    position: relative;
+
+                    .experience-section-item-img {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        max-width: 60px;
+                        max-height: 60px;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    .chart {
+                        display: block;
+                        margin: 0 auto 30px;
+                        height: 220px;
+
+                        .circle1 {
+                        }
+
+                        .circle2 {
+                            fill: none;
+                            stroke-width: 10;
+                            stroke: #fff;
+                            stroke-dasharray: calc(6.6 * 80) calc(6.6 * 20);
+                            stroke-dashoffset: 165;
+                        }
+
+                        .circle3 {
+                            fill: none;
+                            stroke-width: 10;
+                            stroke: #fff;
+                            opacity: 0.5;
+                        }
+                    }
+                }
+
+                .experience-section-item-title {
+                    margin-bottom: 10px;
+                    font: 300 48px/1 $primaryFonts;
+                    text-align: center;
+                    color: $thirdColor;
+                }
+
+                .experience-section-item-description {
+                    font: 300 18px/1 $primaryFonts;
+                    text-align: center;
+                    color: $thirdColor;
+                }
+
+                & + li {
+
+                    &::before {
+                        display: block;
+                        margin: 0 auto 40px;
+                        content: "";
+                        width: 70px;
+                        height: 10px;
+                        background: url("../../img/ellipse.png") center/cover;
+                    }
+
+                    .chart {
+                        .circle2 {
+                            stroke-dasharray: calc(6.6 * 50) calc(6.6 * 50) !important;
+                        }
+                    }
+
+                    & + li {
+                        margin-bottom: 0px;
+
+                        .chart {
+                            .circle2 {
+                                stroke-dasharray: calc(6.6 * 95) calc(6.6 * 5) !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: $md) {
+    .experience-section {
+        .container {
+            .row {
+                .experience-section-item {
+
+                    &::before {
+                        content: none;
+                    }
+
+                    &::after {
+                        display: flex;
+                        margin: 40px auto 0;
+                        content: "";
+                        width: 70px;
+                        height: 10px;
+                        background: url("../../img/ellipse.png") center/cover;
+                    }
+
+                    margin-bottom: 40px;
+
+                    & + li {
+                        margin-bottom: 0px;
+
+                        &::before {
+                            content: none;
+                        }
+
+
+                        & + li {
+                            &::before {
+                                content: none;
+                            }
+
+                            &::after {
+                             
+                                content: none;
+                    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $lg) {
+    .experience-section {
+        .container {
+            .row {
+                .experience-section-item {
+                    position: relative;
+                    &::before {
+                        content: none;
+                    }
+
+                    &::after {
+                        position: absolute;
+                        display: flex;
+                        top: 23%;
+                        left: 100%;
+                        transform: translate(-50%, -50%);
+                        content: "";
+                        width: 70px;
+                        height: 10px;
+                        background: url("../../img/ellipse.png") center/cover;
+                    }
+
+                    margin-bottom: 0;
+
+                    & + li {
+
+                        &::before {
+                            content: none;
+                        }
+
+
+                        & + li {
+                            &::before {
+                                content: none;
+                            }
+
+                            &::after {
+                                content: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

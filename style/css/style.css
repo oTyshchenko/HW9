@@ -471,6 +471,127 @@ a {
     padding-bottom: 50px;
   }
 }
+.experience-section {
+  background: #02baab;
+}
+.experience-section .container .row .experience-section-item {
+  margin-bottom: 40px;
+}
+.experience-section .container .row .experience-section-item .canvas {
+  position: relative;
+}
+.experience-section .container .row .experience-section-item .canvas .experience-section-item-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 60px;
+  max-height: 60px;
+  transform: translate(-50%, -50%);
+}
+.experience-section .container .row .experience-section-item .canvas .chart {
+  display: block;
+  margin: 0 auto 30px;
+  height: 220px;
+}
+.experience-section .container .row .experience-section-item .canvas .chart .circle2 {
+  fill: none;
+  stroke-width: 10;
+  stroke: #fff;
+  stroke-dasharray: calc(6.6 * 80) calc(6.6 * 20);
+  stroke-dashoffset: 165;
+}
+.experience-section .container .row .experience-section-item .canvas .chart .circle3 {
+  fill: none;
+  stroke-width: 10;
+  stroke: #fff;
+  opacity: 0.5;
+}
+.experience-section .container .row .experience-section-item .experience-section-item-title {
+  margin-bottom: 10px;
+  font: 300 48px/1 "Oxygen", sans-serif;
+  text-align: center;
+  color: #fff;
+}
+.experience-section .container .row .experience-section-item .experience-section-item-description {
+  font: 300 18px/1 "Oxygen", sans-serif;
+  text-align: center;
+  color: #fff;
+}
+.experience-section .container .row .experience-section-item + li::before {
+  display: block;
+  margin: 0 auto 40px;
+  content: "";
+  width: 70px;
+  height: 10px;
+  background: url("../../img/ellipse.png") center/cover;
+}
+.experience-section .container .row .experience-section-item + li .chart .circle2 {
+  stroke-dasharray: calc(6.6 * 50) calc(6.6 * 50) !important;
+}
+.experience-section .container .row .experience-section-item + li + li {
+  margin-bottom: 0px;
+}
+.experience-section .container .row .experience-section-item + li + li .chart .circle2 {
+  stroke-dasharray: calc(6.6 * 95) calc(6.6 * 5) !important;
+}
+
+@media (min-width: 768px) {
+  .experience-section .container .row .experience-section-item {
+    margin-bottom: 40px;
+  }
+  .experience-section .container .row .experience-section-item::before {
+    content: none;
+  }
+  .experience-section .container .row .experience-section-item::after {
+    display: flex;
+    margin: 40px auto 0;
+    content: "";
+    width: 70px;
+    height: 10px;
+    background: url("../../img/ellipse.png") center/cover;
+  }
+  .experience-section .container .row .experience-section-item + li {
+    margin-bottom: 0px;
+  }
+  .experience-section .container .row .experience-section-item + li::before {
+    content: none;
+  }
+  .experience-section .container .row .experience-section-item + li + li::before {
+    content: none;
+  }
+  .experience-section .container .row .experience-section-item + li + li::after {
+    content: none;
+  }
+}
+@media (min-width: 992px) {
+  .experience-section .container .row .experience-section-item {
+    position: relative;
+    margin-bottom: 0;
+  }
+  .experience-section .container .row .experience-section-item::before {
+    content: none;
+  }
+  .experience-section .container .row .experience-section-item::after {
+    position: absolute;
+    display: flex;
+    top: 23%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 70px;
+    height: 10px;
+    background: url("../../img/ellipse.png") center/cover;
+  }
+  .experience-section .container .row .experience-section-item + li::before {
+    content: none;
+  }
+  .experience-section .container .row .experience-section-item + li + li::before {
+    content: none;
+  }
+  .experience-section .container .row .experience-section-item + li + li::after {
+    content: none;
+  }
+}
 .main-btn {
   padding: 15px 22px;
   font: bold 12px/1 "Oxygen", sans-serif;
