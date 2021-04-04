@@ -1,0 +1,179 @@
+﻿.project {
+    .container {
+        .row {
+            .project-section-body {
+                margin-bottom: 30px;
+
+                .project-section-body-image-box {
+                    position: relative;
+                    margin-bottom: 30px;
+
+                    .project-section-body-image {
+                        width: 100%;
+                    }
+
+                    .project-section-body-btn-box {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0 30px;
+                        width: 100%;
+
+                        .project-section-body-btn {
+                            width: 40px;
+                            height: 40px;
+                            border: none;
+                            background: url("../../img/progect-page-arrow.png") no-repeat center/cover;
+                            z-index: 2;
+
+                            &:hover {
+                                background: url("../../img/progect-page-arrow-yellow.png") no-repeat center/cover;
+                                transform: scale(-1, 1);
+                            }
+
+                            &-r {
+                                transform: scale(-1, 1);
+
+                                &:hover {
+                                    background: url("../../img/progect-page-arrow-yellow.png") no-repeat center/cover;
+                                    transform: scale(1, 1);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .project-section-body-list {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .project-section-body-list-item {
+                        margin-right: 5px;
+
+                        .project-section-body-list-item-link {
+                            display: block;
+                            width: 16px;
+                            height: 16px;
+
+                            .project-section-body-list-item-link-img {
+                                width: 100%;
+                            }
+                        }
+
+                        .project-section-body-list-item-counter {
+                            padding: 2px;
+                            display: flex;
+                            position: relative;
+                            font: bold 10px/1 $primaryFonts;
+                            color: $fifthColor;
+                            border: 1px solid $fifthColor;
+                            border-radius: 3px;
+                        }
+                    }
+                }
+            }
+
+            .project-section-aside {
+                .project-section-aside-btn-box {
+                    margin-bottom: 50px;
+                    display: flex;
+
+                    .project-section-aside-btn {
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid silver;
+                        background: url("../../img/progect-page-arrow.png") no-repeat center/cover;
+
+                        &:hover {
+                            background: url("../../img/progect-page-arrow.png") no-repeat center/cover;
+                            border: 1px solid $sixthColor;
+                        }
+                    }
+
+                    .project-section-aside-btn-r {
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid silver;
+                        background: url("../../img/progect-page-arrow.png") no-repeat center/cover;
+                        transform: scale(-1, 1);
+
+                        &:hover {
+                            border: 1px solid $sixthColor;
+                        }
+                    }
+                }
+
+                .project-section-aside-like-counter {
+                    display: block;
+                    margin: 0 0 30px 30px;
+                    position: relative;
+                    font: 300 14px/1 $primaryFonts;
+                    color: #555;
+
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        top: -2px;
+                        left: -30px;
+                        width: 20px;
+                        height: 17px;
+                        background: url("../../img/heard.png") no-repeat center/cover;
+                    }
+                }
+
+                .project-section-aside-title {
+                    margin-bottom: 30px;
+                    color: $sixthColor;
+                }
+
+                .project-section-aside-description {
+                    margin-bottom: 30px;
+                }
+
+                .project-section-aside-list-title {
+                    margin-bottom: 7px;
+                    font: bold 14px/1 $primaryFonts;
+                    color: $fifthColor;
+                }
+
+                .project-section-aside-list {
+                    margin-bottom: 50px;
+
+                    .project-section-aside-list-item {
+                        margin-bottom: 7px;
+                        font: 300 14px/1 $primaryFonts;
+                        color: $firstColor;
+
+                        &::before {
+                            display: inline-block;
+                            margin-right: 5px;
+                            content: '';
+                            width: 15px;
+                            height: 13px;
+                            background: url("../../img/marker.png") no-repeat center/cover;
+                        }
+                    }
+                }
+
+                .project-section-aside-btn {
+                    border: 2px solid $sixthColor;
+                    color: $sixthColor;
+
+                    &:hover {
+                        color: $thirdColor;
+                        background: $sixthColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $lg) {
+    .project-section-body {
+        margin-bottom: 0!important;
+        }
+    }
