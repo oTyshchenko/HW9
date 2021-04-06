@@ -1,4 +1,5 @@
 ﻿.main-footer {
+    padding-bottom: 50px;
     background: #19252E;
 
     .footer-top {
@@ -182,6 +183,7 @@
 
     .footer-bottom {
         display: flex;
+        align-items: center;
         justify-content: space-between;
 
         .footer-bottom-description {
@@ -191,9 +193,34 @@
         }
 
         .footer-bottom-btn {
+            align-items: center;
+            display: flex;
             color: $thirdColor;
 
             &::after {
+                content: '';
+                display: flex;
+                margin-left: 15px;
+                width: 7px;
+                height: 16px;
+                border: none;
+                background: url("../../img/arrow1.png") no-repeat center/cover;
+                transform: rotate(90deg);
+            }
+        }
+    }
+}
+
+@media (min-width: $lg) {
+    .main-footer {
+        background: #19252E;
+
+        .footer-bottom {
+            display: flex;
+
+            .footer-bottom-description {
+                max-width: 100%;
+
             }
         }
     }

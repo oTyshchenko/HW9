@@ -74,6 +74,7 @@
                 font: 12px/1 $primaryFonts;
                 color: $fourthColor;
 
+
                 &::after {
                     display: inline-block;
                     margin-left: 5px;
@@ -179,6 +180,12 @@
     }
 }
 
+.blog-single-title {
+    margin-bottom: 20px;
+    font: bold 18px/1 $primaryFonts;
+    color: #474d52;
+}
+
 
 @media (min-width: $lg) {
     .section {
@@ -193,3 +200,4 @@
         margin-bottom: 45px;
     }
 }
+

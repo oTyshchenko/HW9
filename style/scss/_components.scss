@@ -345,3 +345,33 @@
         }
     }
 }
+
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .social-list-item {
+        margin-right: 5px;
+
+        .social-list-item-link {
+            display: block;
+            width: 16px;
+            height: 16px;
+
+            .social-list-item-link-img {
+                width: 100%;
+            }
+        }
+
+        .social-list-item-counter {
+            padding: 2px;
+            display: flex;
+            position: relative;
+            font: bold 10px/1 $primaryFonts;
+            color: $fifthColor;
+            border: 1px solid $fifthColor;
+            border-radius: 3px;
+        }
+    }
+}

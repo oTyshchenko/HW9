@@ -44,36 +44,6 @@
                         }
                     }
                 }
-
-                .project-section-body-list {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    .project-section-body-list-item {
-                        margin-right: 5px;
-
-                        .project-section-body-list-item-link {
-                            display: block;
-                            width: 16px;
-                            height: 16px;
-
-                            .project-section-body-list-item-link-img {
-                                width: 100%;
-                            }
-                        }
-
-                        .project-section-body-list-item-counter {
-                            padding: 2px;
-                            display: flex;
-                            position: relative;
-                            font: bold 10px/1 $primaryFonts;
-                            color: $fifthColor;
-                            border: 1px solid $fifthColor;
-                            border-radius: 3px;
-                        }
-                    }
-                }
             }
 
             .project-section-aside {
